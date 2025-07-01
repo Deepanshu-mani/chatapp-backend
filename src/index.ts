@@ -1,6 +1,6 @@
 import http from "http";
 import { setupWebSocket } from "./websocketServer";
-import { handlePingRequest } from "./Ping";
+import { handlePingRequest } from "./handlePingRequest";
 
 const server = http.createServer((req, res) => {
   handlePingRequest(req, res);
